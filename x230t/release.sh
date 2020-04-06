@@ -115,7 +115,7 @@ if [ ! "$filesize" -eq "$reference_filesize" ] ; then
 	exit 1
 fi
 
-RELEASE_DIR="skulls-x230-${version}"
+RELEASE_DIR="skulls-x230t-${version}"
 rm -rf "$RELEASE_DIR"
 mkdir -p "$RELEASE_DIR"
 
@@ -134,7 +134,7 @@ cp -a ../util "$RELEASE_DIR"
 
 # copy in x230t stuff
 cp -a README.md NEWS LICENSE* \
-	x230t_skulls.sh x230t_heads.sh \
+	x230t_skulls.sh \
 	external_install_bottom.sh external_install_top.sh \
 	"$RELEASE_DIR"
 
